@@ -9,7 +9,7 @@ The app listens on port 4000 and forwards to 3000 during development, and serves
 You can install the server and everything (as described in the next section) with [this script](scripts/add_to_project.sh) as well. Make sure you are in the project directory though.
 
 ```
-wget -O add_to_project.sh https://raw.githubusercontent.com/zwhitchcox/express-proxy-react/main/scripts/add_to_project.sh
+wget -O add_to_project.sh https://raw.githubusercontent.com/zwhitchcox/ref-express-proxy-react/main/scripts/add_to_project.sh
 bash add_to_project.sh
 rm add_to_project.sh
 ```
