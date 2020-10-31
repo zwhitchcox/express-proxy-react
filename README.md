@@ -4,9 +4,17 @@ This is meant to be an example for proxying an express webserver to a [CRA](http
 
 The app listens on port 4000 and forwards to 3000 during development, and serves the static build folder during production.
 
+###  Add to your project with script
 
+You can install the server and everything (as described in the next section) with [this script](scripts/add_to_project.sh) as well. Make sure you are in the project directory though.
 
-### To implement in your own project
+```
+wget -O add_to_project.sh https://raw.githubusercontent.com/zwhitchcox/express-proxy-react/main/scripts/add_to_project.sh
+bash add_to_project.sh
+rm add_to_project.sh
+```
+
+### To implement in your own project yourself
 
 #### Requirements
 
@@ -68,3 +76,4 @@ Then you can run the CRA and express servers in parallel with `yarn parallel`
 #### With VS Code Task
 
 Simply copy the [tasks.json](.vscode/tasks.json) into your project directory, and press `Ctrl+Shift+R` and click Start Express/CRA to run the server/CRA in new terminals.
+
