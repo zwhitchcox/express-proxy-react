@@ -12,6 +12,7 @@ You can install the server and everything (as described in the next section) wit
 wget -O add_to_project.sh https://raw.githubusercontent.com/zwhitchcox/ref-express-proxy-react/main/scripts/add_to_project.sh
 bash add_to_project.sh
 rm add_to_project.sh
+
 ```
 
 ### To implement in your own project yourself
