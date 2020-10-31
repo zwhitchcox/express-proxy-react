@@ -1,5 +1,5 @@
 #!/bin/bash
-yarn add ts-node typescript express express-http-proxy http-proxy-middleware
+yarn add ts-node typescript express express-http-proxy http-proxy-middleware npm-run-all
 mkdir -p server
 pushd server
 curl -L -O https://raw.githubusercontent.com/zwhitchcox/ref-express-proxy-react/main/server/index.ts
