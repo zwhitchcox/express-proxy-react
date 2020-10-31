@@ -1,0 +1,35 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+    {
+      "label": "Express/CRA",
+      "dependsOn": [
+        "Start CRA",
+        "Start Express"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "type": "npm",
+      "script": "start-express",
+      "problemMatcher": [],
+      "label": "Start Express",
+      "detail": "ts-node --project server/tsconfig.json server/index.ts",
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+      }
+    },
+    {
+      "type": "npm",
+      "script": "start-cra",
+      "problemMatcher": [],
+      "label": "Start CRA",
+      "detail": "react-scripts start",
+      "presentation": {
+        "reveal": "never",
+        "panel": "dedicated",
+      }
+    }
+  ]
+}
