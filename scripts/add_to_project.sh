@@ -2,17 +2,22 @@
 yarn add ts-node typescript express express-http-proxy http-proxy-middleware
 mkdir -p server
 pushd server
-wget -O index.ts https://raw.githubusercontent.com/zwhitchcox/express-proxy-react/main/server/index.ts
-wget -O index.tshttps://raw.githubusercontent.com/zwhitchcox/express-proxy-react/main/server/tsconfig.json
+curl -L -O https://raw.githubusercontent.com/zwhitchcox/express-proxy-react/main/server/index.ts
+curl -L -O https://raw.githubusercontent.com/zwhitchcox/express-proxy-react/main/server/tsconfig.json
 popd
 mkdir -p .vscode
 pushd .vscode
-wget -O tasks.json https://raw.githubusercontent.com/zwhitchcox/express-proxy-react/main/.vscode/tasks.json
+curl -L -O tasks.json https://raw.githubusercontent.com/zwhitchcox/express-proxy-react/main/.vscode/tasks.json
 popd
-echo "add the following scripts to your package.json"
-echo ""
-echo  '"scripts": {
-    "start-cra": "react-scripts start",
-    "start-express": "ts-node --project server/tsconfig.json server/index.ts",
-    "parallel": "npm-run-all --parallel start-react start-express",
-...'
+curl -L -O .env https://raw.githubusercontent.com/zwhitchcox/express-proxy-react/main/.env
+# echo -e "\e[32madd the following scripts to your package.json"
+# echo ""
+# echo  '"scripts": {
+#     "start-cra": "react-scripts start",
+#     "start-express": "ts-node --project server/tsconfig.json server/index.ts",
+#     "parallel": "npm-run-all --parallel start-react start-express",
+# ...'
+# echo -e "\e[39m"
+curl -L -O edit_package.js https://raw.githubusercontent.com/zwhitchcox/express-proxy-react/main/scripts/edit_package.js
+node edit_package.js
+rm edit_package.js
